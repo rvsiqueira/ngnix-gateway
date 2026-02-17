@@ -13,6 +13,7 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
       - ./nginx/ssl:/etc/nginx/ssl:ro
       - ./logs:/var/log/nginx
+      - /var/www/audio:/var/www/audio:ro
     networks:
       - shared-services
     healthcheck:
